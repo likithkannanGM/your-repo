@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Aishuuuuuu 🐼💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ★ STAR CANVAS background -->
+  <canvas id="starCanvas"></canvas>
+
+  <!-- ★ FLOATING HEARTS layer -->
+  <div id="hearts-layer" aria-hidden="true"></div>
+
+  <!-- ★ PANDA RAIN container (used by surprise button) -->
+  <div id="panda-rain" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 1 — HERO
+  ══════════════════════════════════════════════ -->
+  <section id="hero">
+
+    <!-- Cinematic vignette overlay -->
+    <div class="vignette"></div>
+
+    <!-- Sparkle particles -->
+    <div id="sparkle-container" aria-hidden="true"></div>
+
+    <!-- Dancing pandas strip — using Unsplash (CORS-friendly, no hotlink block) -->
+    <div class="panda-strip" aria-label="Dancing pandas">
+      <img class="dancing-panda"        src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=200&h=200&fit=crop&crop=face" alt="Panda" data-egg="1" />
+      <img class="dancing-panda delay1" src="https://images.unsplash.com/photo-1527118732049-c88155f2107c?w=200&h=200&fit=crop&crop=face" alt="Panda" data-egg="2" />
+      <img class="dancing-panda delay2" src="https://images.unsplash.com/photo-1590502160462-58b41354f588?w=200&h=200&fit=crop&crop=face" alt="Panda" data-egg="1" />
+      <img class="dancing-panda delay3" src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=200&h=200&fit=crop&crop=face" alt="Panda" data-egg="2" />
+    </div>
+
+    <!-- Hero copy -->
+    <div class="hero-content">
+      <p class="hero-pretext cinematic-fade">🎬 A Film by the Universe, Starring…</p>
+      <h1 class="hero-title cinematic-fade delay-200">
+        Happy Birthday<br/>
+        <span class="gold-shimmer">Aishuuuuuuu</span>
+        <span class="crown-emoji">👑</span>
+      </h1>
+      <p class="hero-subtitle cinematic-fade delay-400">
+        "The only person who can make<br/>
+        <em>spend lakhs on biryani and haleem</em><br/>
+        without complaining."
+      </p>
+      <div class="hero-badges cinematic-fade delay-600">
+        <span class="badge">🐼 Panda Mom</span>
+        <span class="badge">🍗 Biryani Connoisseur</span>
+        <span class="badge">🎬 Romcom Protagonist</span>
+      </div>
+      <a href="#iconic" class="scroll-cta cinematic-fade delay-800">
+        ↓ Witness the Greatness ↓
+      </a>
+    </div>
+
+    <!-- Floating biryani easter egg -->
+    <img
+      id="hero-biryani"
+      class="floating-biryani"
+      src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200&h=200&fit=crop"
+      alt="Biryani"
+      title="Click me 👀"
+    />
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 2 — REASONS YOU'RE ICONIC
+  ══════════════════════════════════════════════ -->
+  <section id="iconic">
+    <div class="section-label">✦ Act II ✦</div>
+    <h2 class="section-title">Reasons You're<br/><span class="italic-gold">Absolutely Iconic</span></h2>
+    <p class="section-sub">peer-reviewed. irrefutable. notarized.</p>
+
+    <div class="cards-grid">
+
+      <div class="icon-card" data-tilt>
+        <div class="card-emoji">🍗</div>
+        <h3>"Always wants biryani,<br/>jus like me"</h3>
+        
+        <div class="card-tag">#SoulmateMaterial</div>
+      </div>
+
+      <div class="icon-card" data-tilt>
+        <div class="card-emoji">🎭</div>
+        <h3>"Probably loves Mahesh Babu<br/>more than her husband"</h3>
+        <div class="card-tag">#NoJudgement</div>
+      </div>
+
+      <div class="icon-card" data-tilt>
+        <div class="card-emoji">🎬</div>
+        <h3>"Main character energy<br/>in every romcom"</h3>
+        <div class="card-tag">#LeadActress</div>
+      </div>
+
+      <div class="icon-card" data-tilt>
+        <div class="card-emoji">🌆</div>
+        <h3>"Hyderabad's unofficial<br/>brand ambassador"</h3>
+        <div class="card-tag">#ProudHydrabadi</div>
+      </div>
+
+      <div class="icon-card" data-tilt>
+        <div class="card-emoji">🐼</div>
+        <h3>"Sends memes<br/>at 2 AM"</h3>
+        <div class="card-tag">#NeedsTherapist</div>
+      </div>
+
+      <div class="icon-card" data-tilt>
+        <div class="card-emoji">💅</div>
+        <h3>"Cries at every romcom<br/>but denies it"</h3>
+        <div class="card-tag">#TotallyFine</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 3 — ROMCOM TIMELINE
+  ══════════════════════════════════════════════ -->
+  <section id="timeline">
+    <div class="section-label">✦ Act III ✦</div>
+    <h2 class="section-title">Our Story,<br/><span class="italic-gold">As a Romcom</span></h2>
+    <p class="section-sub">directed by fate. produced by chaos.</p>
+
+    <div class="timeline-wrapper">
+
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot">🎬</div>
+        <div class="timeline-card">
+          <div class="scene-label">SCENE 01</div>
+          <h3>The First Conversation</h3>
+          <p>Not me begging to pass the phone to brindha: <em>"meet-cute but make it awkward."</em></p>
+          <div class="film-strip">▐ ▐ ▐</div>
+        </div>
+      </div>
+
+      <div class="timeline-item right reveal">
+        <div class="timeline-dot">💞</div>
+        <div class="timeline-card">
+          <div class="scene-label">SCENE 02</div>
+          <h3>The First Meet</h3>
+          <p>getting lost in Lal bagh, church street walks and worst empire biryani .</p>
+          <div class="film-strip">▐ ▐ ▐</div>
+        </div>
+      </div>
+
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot">🌧️</div>
+        <div class="timeline-card">
+          <div class="scene-label">SCENE 03</div>
+          <h3>The Emotional Drama Arc</h3>
+          <p>Everyone needs one. Misunderstanding? Probably. Dramatic silence? Absolutely. But then uk gulbarga fired the shit out of me </p>
+          <div class="film-strip">▐ ▐ ▐</div>
+        </div>
+      </div>
+
+      <div class="timeline-item right reveal">
+        <div class="timeline-dot">❤️</div>
+        <div class="timeline-card">
+          <div class="scene-label">SCENE 04 — NOW PLAYING</div>
+          <h3>Still Together Somehow ❤️</h3>
+          <p>Dont khow how...............</p>
+          <div class="film-strip">▐ ▐ ▐</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 4 — SURPRISE BUTTON
+  ══════════════════════════════════════════════ -->
+  <section id="surprise">
+    <div class="section-label">✦ Intermission ✦</div>
+    <h2 class="section-title">A <span class="italic-gold">Very Important</span> Button</h2>
+    <p class="section-sub">you were warned. don't say we didn't warn you.</p>
+
+    <div class="surprise-zone">
+      <button id="surprise-btn" aria-label="Surprise button — do not click">
+        <span class="btn-text">DO NOT CLICK 😡</span>
+        <span class="btn-glow"></span>
+      </button>
+      <p class="btn-warning">⚠️ Anthropic has not approved this button. Proceed at own risk.</p>
+    </div>
+
+    <!-- Hidden birthday message (shown after click) -->
+    <div id="birthday-message" aria-live="polite">
+      <div class="message-inner">
+        <div class="message-panda">🐼</div>
+        <h2>YOU CLICKED IT.</h2>
+        <p class="message-main">You are my favorite notification forever 💌</p>
+        <p class="message-sub">Every ping. Every "hey". Every 2 AM random calls.<br/>My favourite kind of chaos. Happy Birthday, Aishu.</p>
+        <div class="confetti-row">🎉🐼💕✨🎂🍗🌆🎬</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 5 — FINAL MESSAGE
+  ══════════════════════════════════════════════ -->
+
+
+    <!-- Panda portrait -->
+    <div class="finale-panda-wrap reveal">
+      <img
+        class="finale-panda"
+        src="https://images.unsplash.com/photo-1527118732049-c88155f2107c?w=480&h=480&fit=crop&crop=face"
+        alt="Giant Panda"
+      />
+    </div>
+
+    <div class="finale-content reveal">
+      <div class="section-label">✦ The End Credits ✦</div>
+      <h2 class="finale-title">
+        Thank you for existing,<br/>
+        tolerating me, and<br/>
+        <span class="italic-gold">not blocking me yet.</span>
+      </h2>
+
+
+
+      <div class="finale-letter">
+        
+        <p>
+          May your birthday be as dramatic and beautiful as the best scene from any
+          Telugu romcom. May every plate of biryani hit perfectly. May Mahesh Babu
+        act better than vijay. And may Hyderabad feel just a little extra golden today and little less hot.
+        </p>
+        <p class="finale-sign">
+          With love, chaos, and a probably excessive number of heart emojis —<br/>
+          <em>Your nobody.......</em>
+        </p>
+      </div>
+
+      <div class="finale-tagline">"She came. She ate biryani. She slept."</div>
+    </div>
+
+    <!-- Floating panda stickers -->
+    <div class="sticker s1">🐼</div>
+    <div class="sticker s2">💕</div>
+    <div class="sticker s3">✨</div>
+    <div class="sticker s4">🎬</div>
+    <div class="sticker s5">🍗</div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       EASTER EGG TOAST popup
+  ══════════════════════════════════════════════ -->
+  <div id="egg-toast" role="alert" aria-live="assertive"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
